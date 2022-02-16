@@ -4,7 +4,7 @@
 
 using std::placeholders::_1;
 
-RgbdSlamNode::RgbdSlamNode(ORB_SLAM2::System* pSLAM)
+RgbdSlamNode::RgbdSlamNode(ORB_SLAM3::System* pSLAM)
 :   Node("orbslam"),
     m_SLAM(pSLAM)
 {
