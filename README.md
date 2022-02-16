@@ -35,7 +35,7 @@ Then you can build this package
 
     $ mkdir -p ws/src
     $ cd ws/src
-    $ git clone https://github.com/alsora/ros2-ORB_SLAM2
+    $ git clone https://github.com/jnauticus/ros2-ORB_SLAM3.git
     $ cd ..
     $ colcon build
 
