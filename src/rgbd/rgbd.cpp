@@ -22,7 +22,7 @@ int main(int argc, char **argv)
     // Create SLAM system. It initializes all system threads and gets ready to process frames.
 
     bool visualization = true;
-    ORB_SLAM2::System SLAM(argv[1], argv[2], ORB_SLAM2::System::RGBD, visualization);
+    ORB_SLAM3::System SLAM(argv[1], argv[2], ORB_SLAM3::System::RGBD, visualization);
 
     auto node = std::make_shared<RgbdSlamNode>(&SLAM);
     rclcpp::spin(node);
@@ -39,11 +39,11 @@ int main(int argc, char **argv)
 class ImageGrabber
 {
 public:
-    ImageGrabber(ORB_SLAM2::System* pSLAM):mpSLAM(pSLAM){}
+    ImageGrabber(ORB_SLAM3::System* pSLAM):mpSLAM(pSLAM){}
 
     void GrabRGBD(const ImageMsg::SharedPtr msgRGB, const ImageMsg::SharedPtr msgD);
 
-    ORB_SLAM2::System* mpSLAM;
+    ORB_SLAM3::System* mpSLAM;
 };
 
 int main(int argc, char **argv)
