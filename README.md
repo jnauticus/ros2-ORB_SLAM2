@@ -7,7 +7,7 @@ If you want to integrate ORB_SLAM3 inside your ROS2 system, consider trying [thi
 
  - [ROS2 Foxy](https://github.com/ros2/ros2/wiki/Installation)
  - [Pangolin](https://github.com/stevenlovegrove/Pangolin)
- - [ORB_SLAM2](https://github.com/raulmur/ORB_SLAM2)
+ - [ORB_SLAM3](https://github.com/UZ-SLAMLab/ORB_SLAM3)
  - [OpenCV3](https://docs.opencv.org/3.0-beta/doc/tutorials/introduction/linux_install/linux_install.html)
  - [vision_opencv](https://github.com/ros-perception/vision_opencv/tree/ros2)
  - [message_filters](https://github.com/ros2/message_filters)
