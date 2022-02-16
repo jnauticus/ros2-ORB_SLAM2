@@ -4,7 +4,7 @@
 
 using std::placeholders::_1;
 
-MonocularSlamNode::MonocularSlamNode(ORB_SLAM2::System* pSLAM)
+MonocularSlamNode::MonocularSlamNode(ORB_SLAM3::System* pSLAM)
 :   Node("orbslam"), 
     m_SLAM(pSLAM)
 {
